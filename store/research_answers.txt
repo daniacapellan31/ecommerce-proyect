@@ -1,0 +1,77 @@
+PRACTICAL TASK 2
+
+1. Python requests module
+
+The Python requests module is a library used to send HTTP requests in a simple way. It allows developers to communicate with websites, APIs, and web services without having to manually handle low-level networking details. It is commonly used to send GET, POST, PUT, and DELETE requests.
+
+It works by importing the requests module into a Python program and then using its methods to interact with a web address. For example, a GET request can be used to retrieve information from an API, while a POST request can be used to send data such as form information or login credentials.
+
+The requests module is useful because it is easier to read and use than Python’s built-in tools for web requests. It is widely used in web development, automation, API integration, and data collection.
+
+2. JSON and XML
+
+JSON:
+JSON stands for JavaScript Object Notation. It is a lightweight data format used for storing and exchanging information. It is easy for both humans and machines to read. JSON uses key-value pairs and is commonly used in web APIs and applications.
+
+Uses of JSON:
+- Sending data between a server and a web application
+- Working with REST APIs
+- Storing structured data
+- Exchanging information between systems
+
+Advantages of JSON:
+1. Easy to read and write
+2. Lightweight and compact
+3. Fast to parse
+4. Widely used in web applications and APIs
+
+Disadvantages of JSON:
+1. Less suitable for very complex document structures
+2. Does not support comments officially
+3. Can become hard to read if very large
+4. Has fewer built-in features than XML for metadata and validation
+
+XML:
+XML stands for eXtensible Markup Language. It is a data format used to store and transport information in a structured way. It uses tags and allows users to define their own markup. XML is often used in enterprise systems, configuration files, and document storage.
+
+Uses of XML:
+- Storing and transporting structured data
+- Configuration files
+- Data exchange between different systems
+- Document representation
+
+Advantages of XML:
+1. Very flexible and structured
+2. Supports custom tags
+3. Good for complex data and documents
+4. Supports validation using schemas and DTDs
+
+Disadvantages of XML:
+1. More verbose than JSON
+2. Takes up more space
+3. Can be harder to read
+4. Parsing can be slower than JSON
+
+3. RESTful API
+
+A RESTful API is an interface that allows different software systems to communicate over HTTP by following REST principles. REST stands for Representational State Transfer. A RESTful API usually works with resources, and each resource is identified by a URL.
+
+It works by allowing a client, such as a browser or app, to send an HTTP request to a server. The server processes the request and returns a response, often in JSON format. Common HTTP methods used in RESTful APIs are:
+- GET to retrieve data
+- POST to create data
+- PUT to update data
+- DELETE to remove data
+
+RESTful APIs are used to connect front-end applications with back-end systems, mobile apps with servers, and different services with each other.
+
+Advantages of RESTful APIs:
+1. Simple and easy to understand
+2. Uses standard HTTP methods
+3. Scalable and flexible
+4. Works well with JSON and web applications
+
+Disadvantages of RESTful APIs:
+1. Can require multiple requests to get related data
+2. No strict standard for all implementations
+3. May expose too much or too little data depending on design
+4. Security and versioning need careful planning

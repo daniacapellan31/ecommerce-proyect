@@ -1,0 +1,16 @@
+PLANNING FOR ECOMMERCE APPLICATION
+
+1. System requirements
+The system must allow users to register and log in as buyers or vendors. Vendors must be able to create stores and manage products. Buyers must be able to view products, add them to a cart, checkout, and leave reviews. The system must also support password reset, sessions, permissions, and email invoices.
+
+2. User interface layout
+The interface should have a simple navigation menu with links for home, register, login, logout, create store, create product, cart, and password reset. Product information should be easy to view, and forms should be simple and clear.
+
+3. Access control and security
+Only logged-in users should access certain pages. Vendors should manage stores and products. Buyers should checkout and leave reviews. Password reset tokens should expire. User authentication should protect access to the system.
+
+4. Failure planning
+The system should handle invalid logins, empty carts, missing products, low stock, expired reset tokens, and incorrect password confirmation. Error messages should be shown clearly to help the user recover.
+
+5. Data protection
+The application should use Django authentication, session management, and database models to manage and secure user information.
