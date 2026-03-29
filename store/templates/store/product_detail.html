@@ -1,0 +1,31 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<h2>{{ product.name }}</h2>
+<p>{{ product.description }}</p>
+<p>Price: ${{ product.price }}</p>
+<p>Stock: {{ product.stock }}</p>
+
+<a href="{% url 'add_to_cart' product.id %}">Add to Cart</a> |
+<a href="{% url 'add_review' product.id %}">Add Review</a>
+
+<h3>Reviews</h3>
+{% if reviews %}
+    <ul>
+        {% for review in reviews %}
+            <li>
+                <strong>{{ review.buyer.username }}</strong> -
+                Rating: {{ review.rating }}/5 -
+                {{ review.comment }}
+                {% if review.verified_purchase %}
+                    (Verified Purchase)
+                {% else %}
+                    (Unverified)
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No reviews yet.</p>
+{% endif %}
+{% endblock %}

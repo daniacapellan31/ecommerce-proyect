@@ -1,0 +1,19 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<h2>My Stores</h2>
+
+{% if stores %}
+    <ul>
+        {% for store in stores %}
+            <li>
+                <strong>{{ store.name }}</strong> - {{ store.description }}
+                <a href="{% url 'edit_store' store.id %}">Edit</a>
+                <a href="{% url 'delete_store' store.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You do not have any stores yet.</p>
+{% endif %}
+{% endblock %}

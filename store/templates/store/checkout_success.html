@@ -1,0 +1,8 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<h2>Checkout Successful</h2>
+<p>Your order has been placed successfully.</p>
+<p>Order ID: {{ order.id }}</p>
+<p>Total Paid: ${{ order.total_price }}</p>
+{% endblock %}
